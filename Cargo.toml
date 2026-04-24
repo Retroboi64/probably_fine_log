@@ -2,5 +2,15 @@
 name = "probably_fine_log"
 version = "0.1.0"
 edition = "2024"
+description = "Fast, zero-dependency error logger for all platforms"
+license = "MIT"
+readme = "README.md"
+keywords = ["logging", "error", "logger", "no-std", "zero-deps"]
+categories = ["development-tools::debugging"]
 
-[dependencies]
+[features]
+default = ["std"]
+std = []
+
+[profile.release]
+opt-level = 3
