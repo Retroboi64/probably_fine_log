@@ -22,8 +22,8 @@ errlog = "0.1"
 ```
 
 ```rust
-use errlog::{set_logger, set_max_level, StderrLogger, Level};
-use errlog::{error, warn, info, debug, trace};
+use probably_fine_log::{set_logger, set_max_level, StderrLogger, Level};
+use probably_fine_log::{error, warn, info, debug, trace};
 
 fn main() {
     // Install once at program start
