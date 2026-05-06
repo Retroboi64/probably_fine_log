@@ -49,7 +49,7 @@ Output (with colour):
 ## Custom logger
 
 ```rust
-use errlog::{Logger, Record, set_logger};
+use probably_fine_log::{Logger, Record, set_logger};
 
 struct MyLogger;
 
