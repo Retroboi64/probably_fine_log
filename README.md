@@ -1,4 +1,4 @@
-# errlog
+# probably_fine_log
 
 A **fast, zero-dependency** error logger for Rust — works on every platform including embedded targets.
 
@@ -92,20 +92,10 @@ Disable the default `std` feature to compile on bare-metal targets:
 
 ```toml
 [dependencies]
-errlog = { version = "0.1", default-features = false }
+probably_fine_log = { version = "0.1", default-features = false }
 ```
 
 In `no_std` mode the macros and `NullLogger` are available; `StderrLogger`, timestamp formatting, and `set_logger` require `std`.
-
-## Performance
-
-Benchmarked on an Apple M2 (single thread):
-
-| Scenario | Time |
-|---|---|
-| Filtered call (`level > max_level`) | ~1.2 ns |
-| `NullLogger` (no I/O) | ~8 ns |
-| `StderrLogger` (buffered write) | ~1.4 µs |
 
 ## License
 
