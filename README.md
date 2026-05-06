@@ -18,7 +18,7 @@ A **fast, zero-dependency** error logger for Rust — works on every platform in
 ```toml
 # Cargo.toml
 [dependencies]
-errlog = "0.1"
+probably_fine_log = "0.1"
 ```
 
 ```rust
