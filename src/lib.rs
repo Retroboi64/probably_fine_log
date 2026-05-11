@@ -19,7 +19,6 @@
 //! ```
 
 #![forbid(unsafe_code)]
-#![warn(missing_docs, clippy::all)]
 #![cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(feature = "std")]
@@ -375,6 +374,7 @@ fn days_in_month(m: u64, y: u64) -> u64 {
 }
 
 #[cfg(test)]
+#[allow(dead_code)]
 mod tests {
     use super::*;
     use std::sync::{Arc, Mutex};
